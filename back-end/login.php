@@ -6,7 +6,7 @@ try {
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-        if (!isset($email) || !isset($password) || empty($email) || empty($password)) {
+       if (empty($_POST['email']) || empty($_POST['pass'])) {
             throw new Exception("INVALID DATA");
         }
 
@@ -71,7 +71,7 @@ try {
         }
 
         $con -> close();
-        header("location: ../back-end/reserved_area.php");
+        header("location: ../front-end/reserved_area.php");
         exit();
     }
 

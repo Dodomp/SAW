@@ -10,7 +10,7 @@ try {
 
             $var = ['firstname', 'lastname', 'email', 'pass', 'confirm'];
             for ($i = 0; $i < count($var); $i++) {
-                if (!isset($_POST[$var[$i]]) || empty($_POST[$var[$i]])) {
+                if (empty($_POST[$var[$i]])) {
                     throw new Exception("INVALID DATA");
                 }
             }
@@ -73,7 +73,7 @@ try {
             <script>
                 let message = "REGISTRATION SUCCESSFUL\nYou are about to be redirected to login";
                 alert(message);
-                window.location.href = "login.php";
+                window.location.href = "../front-end/login.php";
             </script>
             ';
 

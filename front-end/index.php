@@ -7,7 +7,10 @@
 </head>
 <body>
 
-<a href="registration.php">Vai alla pagina di registrazione</a>
+<a href="registration.php">Vai alla pagina di registrazione.</a> <br>
+<a href="login.php">Vai alla pagina di accesso.</a>
+
+
 <!-- Aggiungi altri attributi o stili all'ancora secondo le tue esigenze -->
 
 <script>
