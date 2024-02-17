@@ -1,16 +1,13 @@
 <?php
-session_start();
+
 include "function.php";
-
-if (!isAdmin()) header("location: ../front-end/index.php");
-
 
 header('Access-Control-Allow-Origin: *');
 try{
 
     $con=connection();
     // Query per prendere tutti gli utenti
-    $stmt = $con->prepare("SELECT * FROM users");
+    $stmt = $con->prepare("SELECT * FROM articoli");
     $stmt->execute();
 
     if ($stmt->errno) {
@@ -21,9 +18,9 @@ try{
     $queryResult = $stmt->get_result();
 
     // Ottieni tutti i risultati
-    $users = array();
+    $articols = array();
     while ($row = $queryResult->fetch_assoc()) {
-        $users[] = $row;
+        $articols[] = $row;
     }
 
     // Chiudi la connessione e lo statement
@@ -31,7 +28,7 @@ try{
 
     // Invia la risposta come JSON
     header('Content-Type: application/json');
-    echo json_encode($users);
+    echo json_encode($articols);
 
 
 } catch (Exception $e) {
