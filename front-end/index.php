@@ -19,8 +19,8 @@
         <ul class="nav__links">
             <li class="link"><a href="#">HOME</a></li>
             <li class="link"><a href="#">SHOP</a></li>
-            <li class="link"><a href="#">PAGES</a></li>
-            <li class="link"><a href="#">BLOG</a></li>
+            <li class="link"><a href="login.php">SIGN IN</a></li>
+            <li class="link"><a href="registration.php">SIGN UP</a></li>
             <li class="link"><a href="#">LOOKBOOK</a></li>
         </ul>
         <div class="nav__icons">
@@ -286,23 +286,10 @@
         <div class="copyright">
             Copyright © 2023 Web Design Mastery. All rights reserved.
         </div>
-        <div class="footer__form">
-            <form>
-                <input type="text" placeholder="ENTER YOUR EMAIL" />
-                <button class="btn" type="submit">SUBSCRIBE</button>
-            </form>
-        </div>
+
     </div>
 
 
-
-
-
-
-
-
-<a href="registration.php">Vai alla pagina di registrazione.</a> <br>
-<a href="login.php">Vai alla pagina di accesso.</a>
 
 
 <!-- Aggiungi altri attributi o stili all'ancora secondo le tue esigenze -->
