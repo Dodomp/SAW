@@ -1,9 +1,9 @@
 <?php
-    session_start();
+session_start();
 
-  include '../back-end/function.php';
+include '../back-end/function.php';
 
-  if(!isAdmin()) header("index.php");
+if(!isAdmin()) header("index.php");
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
 <body>
 
 
-  <div class="container">
+<div class="container">
 
     <header>
         <h1>Users Management</h1>
@@ -30,7 +30,7 @@
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="toast" class="toast bg-dark text-white rounded" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-            <strong class="me-auto" style="color: #212529;">Notifica</strong>
+                <strong class="me-auto" style="color: #212529;">Notifica</strong>
             </div>
             <div class="toast-body" id="toast-body-content" style="background-color: #212529;">
                 x <!-- x viene modificato dinamicamente -->
@@ -47,15 +47,16 @@
             <div class="table-container">
                 <table id="userTable" class="table table-dark table-striped">
                     <thead>
-                        <tr>
-                            <th scope="col">FIRSTNAME</th>
-                            <th scope="col">LASTNAME</th>
-                            <th scope="col">EMAIL</th>
-                            <th scope="col">ADMIN</th>
-                        </tr>
+                    <tr>
+                        <th scope="col">Immagine</th>
+                        <th scope="col">Nome Orologio</th> <!--descr breve-->
+                        <th scope="col">Descrizione</th>
+                        <th scope="col">Prezzo</th>
+
+                    </tr>
                     </thead>
                     <tbody>
-                        <!-- Il contenuto della tabella verrà popolato dinamicamente -->
+                    <!-- Il contenuto della tabella verrà popolato dinamicamente -->
                     </tbody>
                 </table>
             </div>
@@ -72,11 +73,11 @@
        Il tuo contenuto amministrativo qui
     </div>-->
 
-  </div>
+</div>
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 </html>
