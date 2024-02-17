@@ -11,6 +11,7 @@
                     <li class='link'><a href='#'>CHI SIAMO</a></li>
                     <li class='link'><a href='#'>CARRELLO</a></li>
                     <li class='link'><a href='#'>ADMIN AREA</a></li>
+                    <li class='link'><a href='../back-end/logout.php'>LOG OUT</a></li>
 
                 </ul>
                 <div class='nav__icons'>
