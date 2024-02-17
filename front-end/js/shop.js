@@ -35,9 +35,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 let button = document.createElement('button');
                 button.textContent = 'Aggiungi al carrello';
                 button.setAttribute('button-id', articoli.Id_Articolo);
+                button.setAttribute('price', articoli.Prezzo);
+                button.setAttribute('op', '1');
 
                 button.onclick = function () {
-                    AddToCart(this.getAttribute('button-id'));
+                    AddToCart(
+                        this.getAttribute('button-id'),
+                        this.getAttribute('price'),
+                        this.getAttribute('op'))
+
                 }
 
                 buttonTd.appendChild(button);
@@ -50,3 +56,35 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
 });
+
+
+function AddToCart (id,price,op) {
+
+    let data = {
+        id : id,
+        price : price,
+        op : op,
+    };
+
+    fetch("AddToCart.php", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Errore HTTP! Stato: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+
+            console.log(data);
+        })
+        .catch(error => {
+
+            console.error('Errore nella richiesta Fetch POST:', error);
+        });
+}
