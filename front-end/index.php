@@ -1,3 +1,6 @@
+<?php
+    session_start();
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,22 +16,9 @@
     <title>Web Design Mastery | Mon'sa</title>
 </head>
 <body>
-    <div class="header__bar">Free Shipping on Orders Over $50</div>
-    <nav class="section__container nav__container">
-        <a href="#" class="nav__logo">Mon'sa</a>
-        <ul class="nav__links">
-            <li class="link"><a href="#">HOME</a></li>
-            <li class="link"><a href="#">SHOP</a></li>
-            <li class="link"><a href="login.php">SIGN IN</a></li>
-            <li class="link"><a href="registration.php">SIGN UP</a></li>
-            <li class="link"><a href="#">LOOKBOOK</a></li>
-        </ul>
-        <div class="nav__icons">
-            <span><i class="ri-shield-user-line"></i></span>
-            <span><i class="ri-search-line"></i></span>
-            <span><i class="ri-shopping-bag-2-line"></i></span>
-        </div>
-    </nav>
+        <?php
+            include "../back-end/NavBar.php";
+        ?>
 
     <header>
         <div class="section__container header__container">

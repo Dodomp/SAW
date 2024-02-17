@@ -71,7 +71,7 @@ try {
         }
 
         $con -> close();
-        header("location: ../front-end/reserved_area.php");
+        header("location: ../front-end/index.php");
         exit();
     }
 
