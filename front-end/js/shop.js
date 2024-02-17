@@ -21,9 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
             data.forEach(function (articoli) {
 
+                let percorso = "assets/Orologi/" + articoli.NomeImmagine + ".jpeg"
+
+
                 let row = document.createElement('tr');
                 row.innerHTML = `
-                            <td><img width=50px height=50px src="images/Orologi/' . articoli. . '.jpeg"/></td>
+                            <td><img width=50px height=50px src=${percorso} alt="must have"></td>
                             <td>${articoli.DescBreve}</td>
                             <td>${articoli.Descr}</td>
                             <td>${articoli.Prezzo}</td>`;
@@ -31,14 +34,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 let buttonTd = document.createElement('td');
                 let button = document.createElement('button');
                 button.textContent = 'Aggiungi al carrello';
+                button.setAttribute('button-id', articoli.Id_Articolo);
 
                 button.onclick = function () {
-                    AddToCart()
+                    AddToCart(this.getAttribute('button-id'));
                 }
 
                 buttonTd.appendChild(button);
                 row.appendChild(buttonTd);
-
+                tbody.appendChild(row);
             });
         })
         .catch(error => {
