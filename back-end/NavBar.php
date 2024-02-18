@@ -9,7 +9,7 @@
                     <li class='link'><a href='#'>HOME</a></li>
                     <li class='link'><a href='shop.php'>SHOP</a></li>
                     <li class='link'><a href='#'>CHI SIAMO</a></li>
-                    <li class='link'><a href='#'>CARRELLO</a></li>
+                    <li class='link'><a href='carrello.php'>CARRELLO</a></li>
                     <li class='link'><a href='#'>ADMIN AREA</a></li>
                     <li class='link'><a href='../back-end/logout.php'>LOG OUT</a></li>
 
@@ -30,8 +30,8 @@
                     <li class='link'><a href='#'>HOME</a></li>
                     <li class='link'><a href='shop.php'>SHOP</a></li>
                     <li class='link'><a href='#'>CHI SIAMO</a></li>
-                    <li class='link'><a href='#'>CARRELLO</a></li>
-                    <li class='link'><a href='#'>LOG OUT</a></li>
+                    <li class='link'><a href='carrello.php'>CARRELLO</a></li>
+                    <li class='link'><a href='../back-end/logout.php'>LOG OUT</a></li>
 
                 </ul>
                 <div class='nav__icons'>

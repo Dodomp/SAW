@@ -47,7 +47,7 @@ try {
             $_SESSION["admin"] = $res["admin"];
         }
 
-        $_SESSION["expire"] = time() + 600;
+        $_SESSION["expire"] = time() + 6000;
 
         if ($remember) {
             $id_cookie = bin2hex(random_bytes(32)) . time();
