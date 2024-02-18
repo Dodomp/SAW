@@ -7,7 +7,7 @@
                 <a href='#' class='av__logo'>Mona </a>
                 <ul class='nav__links'>
                     <li class='link'><a href='#'>HOME</a></li>
-                    <li class='link'><a href='#'>SHOP</a></li>
+                    <li class='link'><a href='shop.php'>SHOP</a></li>
                     <li class='link'><a href='#'>CHI SIAMO</a></li>
                     <li class='link'><a href='#'>CARRELLO</a></li>
                     <li class='link'><a href='#'>ADMIN AREA</a></li>
@@ -28,7 +28,7 @@
                 <a href='#' class='av__logo'>'Mon'sa' </a>
                 <ul class='nav__links'>
                     <li class='link'><a href='#'>HOME</a></li>
-                    <li class='link'><a href='#'>SHOP</a></li>
+                    <li class='link'><a href='shop.php'>SHOP</a></li>
                     <li class='link'><a href='#'>CHI SIAMO</a></li>
                     <li class='link'><a href='#'>CARRELLO</a></li>
                     <li class='link'><a href='#'>LOG OUT</a></li>
@@ -51,7 +51,7 @@
                 <a href='#' class='av__logo'>Mon'sa</a>
                 <ul class='nav__links'>
                     <li class='link'><a href='#'>HOME</a></li>
-                    <li class='link'><a href='#'>SHOP</a></li>
+                    <li class='link'><a href='shop.php'>SHOP</a></li>
                     <li class='link'><a href='#'>CHI SIAMO</a></li>
                     <li class='link'><a href='login.php'>SIGN IN</a></li>
                     <li class='link'><a href='registration.php'>SIGN UP</a></li>

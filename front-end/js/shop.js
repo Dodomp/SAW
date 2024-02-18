@@ -66,7 +66,7 @@ function AddToCart (id,price,op) {
         op : op,
     };
 
-    fetch("AddToCart.php", {
+    fetch("../../back-end/AddToCart.php", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

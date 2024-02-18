@@ -1,6 +1,6 @@
 <?php
 
-include "function.php";
+include "function/function.php";
 
 header('Access-Control-Allow-Origin: *');
 try{

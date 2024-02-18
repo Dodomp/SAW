@@ -1,6 +1,6 @@
 <?php
 
-include "function.php";
+include "function/function.php";
 
 
 // Controllo se l'utente è già loggato tramite il cookie (se c'è)

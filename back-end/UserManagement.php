@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "function.php";
+include "function/function.php";
 
 if (!isAdmin()) header("location: ../front-end/index.php");
 

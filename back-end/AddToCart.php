@@ -16,19 +16,22 @@ try {
 
         $con = connection();
 
-        if (verify_produtct($data['id'],$_SESSION["login"],$con) && verify_amount($data['id'],$con))
-        {
-            if ($data['op'] == "1") increasePrudutc($data['id'],$data['price'],$_SESSION["login"],$con);
-            else delProduct($data['id'],$data['price'],$_SESSION["login"],$con);
+        if ($data['op'] == '1' && verifyAmount($data['id'],$con)){
+            if (verifyProduct($data['id'],$_SESSION["login"],$con)){
+                increaseProduct($data['id'],$data['price'],$_SESSION["login"],$con);
+            }
+            else{
+                addProduct($data['id'],$data['price'],$_SESSION["login"],$con);
+            }
         }
+        /*else {
+            decreaseProduct($data['id'],$data['price'],$_SESSION["login"],$con);
+        }*/
 
-        addProduct();
-
-
-
-
-
-
+        // Invia la risposta come JSON
+        $message=true;
+        header('Content-Type: application/json');
+        echo json_encode($message);
 
 
     }

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include '../back-end/function.php';
+include '../back-end/function/function.php';
 
 if(!isAdmin()) header("index.php");
 ?>
