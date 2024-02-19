@@ -17,16 +17,25 @@ try {
         $con = connection();
 
         if ($data['op'] == '1' && verifyAmount($data['id'],$con)){
-            if (verifyProduct($data['id'],$_SESSION["login"],$con)){
+            if (verifyProduct($data['id'],$_SESSION["login"],$con)>0){
                 increaseProduct($data['id'],$data['price'],$_SESSION["login"],$con);
             }
             else{
+
                 addProduct($data['id'],$data['price'],$_SESSION["login"],$con);
             }
         }
-        /*else {
-            decreaseProduct($data['id'],$data['price'],$_SESSION["login"],$con);
-        }*/
+        else {
+            $qta=verifyProduct($data['id'],$_SESSION["login"],$con);
+
+            if ($qta>1) {
+                decreaseProduct($data['id'], $data['price'], $_SESSION["login"], $con);
+            }
+            if ($qta==1){
+                deleteProduct($data['id'], $data['price'], $_SESSION["login"], $con);
+            }
+
+        }
 
         // Invia la risposta come JSON
         $message=true;

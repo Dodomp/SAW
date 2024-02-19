@@ -19,32 +19,30 @@ document.addEventListener('DOMContentLoaded', function () {
             let tbody = document.querySelector('#userTable tbody');
             tbody.innerHTML = ''; // Svuota il contenuto della tabella
 
-            //TO DO, CREARE UNA VISTA NEL DATABASE
+            data.forEach(function (carrello) {
 
-            data.forEach(function (articoli, carrello) {
-
-                    let percorso = "assets/Orologi/" + articoli.NomeImmagine + ".jpeg"
+                    let percorso = "assets/Orologi/" + carrello.NomeImmagine + ".jpeg"
 
 
                     let row = document.createElement('tr');
                     row.innerHTML = `
                                 <td><img width=50px height=50px src=${percorso} alt="must have"></td>
-                                <td>${articoli.DescBreve}</td>
+                                <td>${carrello.DescBreve}</td>
                                 <td>${carrello.quantità}</td>
                                 <td>${carrello.prezzo}</td>`;
 
                     let buttonTdAdd = document.createElement('td');
                     let buttonAdd = document.createElement('button');
                     buttonAdd.textContent = 'Aggiungi al carrello';
-                    buttonAdd.setAttribute('button-id', articoli.Id_Articolo);
-                    buttonAdd.setAttribute('price', articoli.Prezzo);
+                    buttonAdd.setAttribute('button-id', carrello.Id_Articolo);
+                    buttonAdd.setAttribute('price', carrello.Prezzo);
                     buttonAdd.setAttribute('op', '1');
 
                     let buttonTdRM = document.createElement('td');
                     let buttonRM = document.createElement('button');
                     buttonRM.textContent = 'Rimuovi dal carrello';
-                    buttonRM.setAttribute('button-id', articoli.Id_Articolo);
-                    buttonRM.setAttribute('price', articoli.Prezzo);
+                    buttonRM.setAttribute('button-id', carrello.Id_Articolo);
+                    buttonRM.setAttribute('price', carrello.Prezzo);
                     buttonRM.setAttribute('op', '0');
 
 
@@ -91,7 +89,7 @@ function AddToCart (id,price,op) {
         op : op,
     };
 
-    fetch("../../back-end/AddToCart.php", {
+    fetch("../back-end/AddToCart.php", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -105,7 +103,7 @@ function AddToCart (id,price,op) {
             return response.json();
         })
         .then(data => {
-
+            location.reload();
             console.log(data);
         })
         .catch(error => {

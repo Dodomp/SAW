@@ -2,6 +2,7 @@
 
 include "function/function.php";
 
+if (!isLogged()) header("location: ../front-end/");
 header('Access-Control-Allow-Origin: *');
 try{
 
