@@ -3,7 +3,18 @@ session_start();
 
 include '../back-end/function/function.php';
 
-if(!isAdmin()) header("index.php");
+if(!isAdmin()) {
+    echo '
+        <script>
+            let message = "SIGN IN, please\nYou are about to be redirected to login";
+            alert(message);
+            window.location.href = "login.php";
+        </script>
+        ';
+
+    //header("location: index.php");
+}
+
 ?>
 
 <!DOCTYPE html>

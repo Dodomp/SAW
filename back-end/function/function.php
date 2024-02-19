@@ -13,7 +13,7 @@ function connection()
 }
 
 // funzione per controllare che l'utente sia loggato
-function isLogged() {
+function isLogged(): bool {
     if (!isset($_SESSION["login"])){
         return false;
     }
@@ -27,7 +27,7 @@ function isLogged() {
 }
 
 // funzione per controllare se l'utente ha l'accesso alle aree admin
-function isAdmin() {
+function isAdmin(): bool {
     if (!isset($_SESSION["admin"])) {
         return false;
     }

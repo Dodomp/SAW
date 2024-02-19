@@ -1,14 +1,16 @@
 <?php
-
+session_start();
 include "function/function.php";
-
 if (!isLogged()) header("location: ../front-end/");
-header('Access-Control-Allow-Origin: *');
-try{
 
+header('Access-Control-Allow-Origin: *');
+
+try{
 $con=connection();
+$utente=$_SESSION['login'];
 // Query per prendere tutti gli utenti
-$stmt = $con->prepare("SELECT * FROM articoli, carrello WHERE articoli.id_Articolo=carrello.id_prodotto");
+$stmt = $con->prepare("SELECT * FROM articoli, carrello WHERE articoli.id_Articolo=carrello.id_prodotto AND carrello.id_utente=?");
+$stmt->bind_param("i", $utente);
 $stmt->execute();
 
 if ($stmt->errno) {
