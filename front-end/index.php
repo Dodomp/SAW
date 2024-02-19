@@ -1,5 +1,6 @@
 <?php
     session_start();
+    var_dump($_SESSION);
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,12 +14,16 @@
             rel="stylesheet"
     />
     <link rel="stylesheet" href="Style/homepage.css" />
+    <script src="js/newsletter.js"></script>
     <title>Web Design Mastery | Watch It</title>
 </head>
 <body>
         <?php
             include "../back-end/NavBar.php";
+            if (isset($_GET["message"]))  echo "<script>  mostraPopupSuccesso() </script>";
         ?>
+
+
 
     <header>
         <div class="section__container header__container">

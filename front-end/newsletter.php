@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>Newsletter</title>
     <link rel="stylesheet" href="Style/Newsletter.css">
-    <!--<script src="../js/Newsletter.js"></script>-->
+    <script src="js/newsletter.js"></script>
 
     <style>
         body {
-            background-color: #343a40; /* Colore di sfondo scuro */
+            background-color: white; /* Colore di sfondo scuro */
             color: Black; /* Colore del testo bianco */
         }
 
@@ -33,7 +33,10 @@
 </head>
 
 <body>
-  <form   action="Send_Newsletter.php" method="post" name="emailEditor" id="emailEditor">
+
+
+
+  <form   action="../back-end/newsletter.php" method="post" name="emailEditor" id="emailEditor">
       <h2>Newsletter</h2>
 
       <input type="text" name="emailObject" id="emailObject" placeholder="Object" required> <br></br>

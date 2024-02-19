@@ -28,10 +28,7 @@ function isLogged(): bool {
 
 // funzione per controllare se l'utente ha l'accesso alle aree admin
 function isAdmin(): bool {
-    if (!isset($_SESSION["admin"])) {
-        return false;
-    }
-    return true;
+    return isset($_SESSION["admin"]);
 }
 
 
