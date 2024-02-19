@@ -43,6 +43,18 @@ if(!isLogged()) {
     </header>
 
 
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="toast" class="toast bg-dark text-white rounded" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto" style="color: #212529;">Notifica</strong>
+            </div>
+            <div class="toast-body" id="toast-body-content" style="background-color: #212529;">
+                PRODOTTO AGGIUNTO AL CARRELLO
+            </div>
+        </div>
+    </div>
+
+
 
     <div class="row">
         <div class="col-12">

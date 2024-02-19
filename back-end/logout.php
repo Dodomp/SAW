@@ -1,8 +1,12 @@
 <?php
     session_start();
 
-    include 'function.php';
+    include 'function/function.php';
+    include  'function/cart_function.php';
 
+    $con=connection();
+
+    deleteCart($_SESSION["login"],$con);
     //ELIMINAZIONE DI TUTTE LE VARIABILI DI SESSIONE E DISTRUZIONE DELLA SESSIONE
     unset($_SESSION["login"]);
     unset($_SESSION["email"]);
@@ -18,11 +22,11 @@
     //CANCELLAZIONE DEL COOKIE DAL BROWSER SE PRESENTE
     if (isset($_COOKIE['id_cookie'])) {
         // ELIMINAZIONE DEL COOKIE DAL DATABASE
-        $con=connection();
+
         $stmt = $con->prepare("UPDATE users SET id_cookie=NULL, expire=NULL, flag=0 WHERE id_cookie=?");
         $stmt->bind_param('s', $_COOKIE['id_cookie']);
         $stmt->execute();
-        $con->close();
+        $stmt->close();
 
         // ELIMINAZIONE DEL COOKIE DAL BROWSER
         setcookie('id_cookie', '', time() - 3600, '/');
@@ -31,6 +35,10 @@
         // Eliminare la variabile del cookie dalla memoria del server
         unset($_COOKIE['id_cookie']);
     }
+
+
+
+
+
     header("Location: ../front-end/index.php");
     exit();
-    ?>

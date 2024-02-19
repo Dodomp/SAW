@@ -57,7 +57,7 @@ try {
 
             $stmt -> close();
 
-            $stmt = $con->prepare("INSERT INTO users (firstname,lastname,email,password, newsletter.php) VALUES (?,?,?,?,?)");
+            $stmt = $con->prepare("INSERT INTO users (firstname,lastname,email,password, newsletter) VALUES (?,?,?,?,?)");
             $stmt->bind_param('ssssi', $firstname, $lastname, $email, $hashedPassword, $Newsletter);
             $stmt -> execute();
 

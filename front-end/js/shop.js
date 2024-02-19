@@ -80,11 +80,21 @@ function AddToCart (id,price,op) {
             return response.json();
         })
         .then(data => {
-
+            mostraPopupSuccesso();
             console.log(data);
         })
         .catch(error => {
 
             console.error('Errore nella richiesta Fetch POST:', error);
         });
+}
+
+
+function mostraPopupSuccesso() {
+    let toast = new bootstrap.Toast(document.getElementById('toast'));
+    // Modifica dinamicamente il testo del corpo del toast in base alla funzione
+    toast.show();
+    setTimeout(function() {
+        toast.hide();
+    }, 1500);
 }
