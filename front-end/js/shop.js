@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <td>${articoli.Descr}</td>
                             <td>${articoli.Prezzo}</td>`;
 
-                let buttonTd = document.createElement('td');
+                let buttonTd1 = document.createElement('td');
                 let button = document.createElement('button');
                 button.textContent = 'Aggiungi al carrello';
                 button.setAttribute('button-id', articoli.Id_Articolo);
@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 }
 
-                buttonTd.appendChild(button);
-                row.appendChild(buttonTd);
+                buttonTd1.appendChild(button);
+                row.appendChild(buttonTd1);
                 tbody.appendChild(row);
             });
         })

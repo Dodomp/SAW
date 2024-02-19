@@ -6,7 +6,7 @@
              <nav class='section__container nav__container'>
                 <a href='#' class='av__logo'>Mona </a>
                 <ul class='nav__links'>
-                    <li class='link'><a href='#'>HOME</a></li>
+                    <li class='link'><a href='index.php'>HOME</a></li>
                     <li class='link'><a href='shop.php'>SHOP</a></li>
                     <li class='link'><a href='#'>CHI SIAMO</a></li>
                     <li class='link'><a href='carrello.php'>CARRELLO</a></li>
@@ -24,10 +24,10 @@
         }
         else{
             echo"
-             <nav class='section__container nav__container'>;
-                <a href='#' class='av__logo'>'Mon'sa' </a>
+             <nav class='section__container nav__container'>
+                <a href='#' class='av__logo'>Watch It </a>
                 <ul class='nav__links'>
-                    <li class='link'><a href='#'>HOME</a></li>
+                    <li class='link'><a href='index.php'>HOME</a></li>
                     <li class='link'><a href='shop.php'>SHOP</a></li>
                     <li class='link'><a href='#'>CHI SIAMO</a></li>
                     <li class='link'><a href='carrello.php'>CARRELLO</a></li>
@@ -47,10 +47,10 @@
 
     else {
         echo"
-             <nav class='section__container nav__container'>;
-                <a href='#' class='av__logo'>Mon'sa</a>
+             <nav class='section__container nav__container'>
+                <a href='#' class='av__logo'>Watch It</a>
                 <ul class='nav__links'>
-                    <li class='link'><a href='#'>HOME</a></li>
+                    <li class='link'><a href='index.php'>HOME</a></li>
                     <li class='link'><a href='shop.php'>SHOP</a></li>
                     <li class='link'><a href='#'>CHI SIAMO</a></li>
                     <li class='link'><a href='login.php'>SIGN IN</a></li>

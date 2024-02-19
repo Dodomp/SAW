@@ -1,0 +1,67 @@
+.header{
+    margin-top: 20px;
+}
+
+.table-container {
+    margin-top: 20px; /* Aggiunge uno spazio sopra la tabella */
+}
+
+#userTable {
+    border-radius: 8px; /* Aggiunge angoli arrotondati alla tabella */
+}
+
+#userTable th, #userTable td {
+    text-align: center; /* Centra il testo nelle celle */
+}
+
+#userTable tbody tr:hover {
+    background-color: #f5f5f5; /* Aggiunge uno sfondo più chiaro al passaggio del mouse */
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.nav__container {
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.link a {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.link a:hover {
+    color: var(--text-dark);
+}
+
+.nav__icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__icons span {
+    font-size: 1.25rem;
+    cursor: pointer;
+}

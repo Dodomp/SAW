@@ -13,7 +13,7 @@
             rel="stylesheet"
     />
     <link rel="stylesheet" href="Style/homepage.css" />
-    <title>Web Design Mastery | Mon'sa</title>
+    <title>Web Design Mastery | Watch It</title>
 </head>
 <body>
         <?php
