@@ -542,3 +542,51 @@ header {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: transparent;
+    border: none;
+    color: #333; /* Colore del testo del pulsante */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333; /* Colore del testo del menu a tendina */
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Colore di sfondo al passaggio del mouse */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.options{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-light);
+    transition: 0.3s;
+}
