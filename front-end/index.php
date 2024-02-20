@@ -157,54 +157,44 @@
             <h2 class="section__title">Latest News</h2>
             <div class="news__grid">
                 <div class="news__card">
-                    <img src="assets/news-1.jpg" alt="news" />
+                    <img src="assets/f.jpg" alt="news" />
                     <div class="news__details">
                         <p>
-                            FASHION <i class="ri-checkbox-blank-circle-fill"></i>
-                            <span>JAMES SIMSON</span>
-                            <i class="ri-checkbox-blank-circle-fill"></i> FEB 2, 2019
+                            PATEK PHILIPPE <i class="ri-checkbox-blank-circle-fill"></i>
+                            <span>NAUTILUS</span>
+                            <i class="ri-checkbox-blank-circle-fill"></i> 2024
                         </p>
-                        <h4>Seasonal Trends</h4>
+                        <h4>OROLOGIO DI LUSSO</h4>
                         <hr />
-                        <p>
-                            Discuss the latest fashion trends for the current season and
-                            offer tips and ideas on how to incorporate these trends into
-                            your wardrobe.
-                        </p>
+
                         <a href="#"><i class="ri-arrow-right-line"></i></a>
                     </div>
                 </div>
                 <div class="news__card">
-                    <img src="assets/news-2.jpg" alt="news" />
+                    <img src="assets/g.jpg" alt="news" />
                     <div class="news__details">
                         <p>
-                            TRENDS <i class="ri-checkbox-blank-circle-fill"></i>
-                            <span>JAMES SIMSON</span>
-                            <i class="ri-checkbox-blank-circle-fill"></i> APR 15, 2019
+                            ROLEX <i class="ri-checkbox-blank-circle-fill"></i>
+                            <span>DAYTONA</span>
+                            <i class="ri-checkbox-blank-circle-fill"></i> 2024
                         </p>
-                        <h4>Fashion Tips and Advice</h4>
+                        <h4>OROLOGIO DI LUSSO</h4>
                         <hr />
-                        <p>
-                            Provide your readers with practical tips and advice on how to
-                            dress for different occasions, body types, or style preferences.
-                        </p>
+
                         <a href="#"><i class="ri-arrow-right-line"></i></a>
                     </div>
                 </div>
                 <div class="news__card">
-                    <img src="assets/news-3.jpg" alt="news" />
+                    <img src="assets/h.jpg" alt="news" />
                     <div class="news__details">
                         <p>
-                            STYLE <i class="ri-checkbox-blank-circle-fill"></i>
-                            <span>JAMES SIMSON</span>
-                            <i class="ri-checkbox-blank-circle-fill"></i> JUL 22, 2019
+                            APPLE WATCH<i class="ri-checkbox-blank-circle-fill"></i>
+                            <span>SERIES 8</span>
+                            <i class="ri-checkbox-blank-circle-fill"></i> 2024
                         </p>
-                        <h4>Sustainable Fashion</h4>
+                        <h4>SMART WATCH</h4>
                         <hr />
-                        <p>
-                            Cover the growing trend of eco-conscious fashion and explore the
-                            various ways to be sustainable in your fashion choices.
-                        </p>
+
                         <a href="#"><i class="ri-arrow-right-line"></i></a>
                     </div>
                 </div>
