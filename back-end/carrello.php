@@ -2,7 +2,7 @@
 session_start();
 include "function/function.php";
 if (!isLogged()) header("location: ../front-end/");
-
+header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
 try{
@@ -30,7 +30,7 @@ $carrello[] = $row;
 $con->close();
 
 // Invia la risposta come JSON
-header('Content-Type: application/json');
+
 echo json_encode($carrello);
 
 

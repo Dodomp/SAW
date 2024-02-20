@@ -1,5 +1,5 @@
 <?php
-global $sql;
+
 session_start();
 
 include "function/function.php";
@@ -9,16 +9,20 @@ if (!isLogged()) header("location: ../front-end/");
 
 header('Content-Type: application/json');
 
-$sql->begin_trasaction();
+
 
 try {
+
+    $con = connection();
+
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         //in data ci saranno idArticolo (id) e il prezzo (price) dell'articolo e remove o add (op)
         $data = json_decode(file_get_contents('php://input'), true);
 
-        $con = connection();
 
+
+        $con->begin_transaction();
 
         if ($data['op'] == '1' && verifyAmount($data['id'],$con)){
             if (verifyProduct($data['id'],$_SESSION["login"],$con)>0){
@@ -41,7 +45,7 @@ try {
 
         }
 
-        $sql->commit();
+        $con->commit();
         // Invia la risposta come JSON
         $message=true;
 
@@ -49,12 +53,11 @@ try {
 
 
     }
+} catch (mysqli_sql_exception $e){
+    if (isset($con)) $con->rollback();
+    echo json_encode($e->getMessage());
 } catch (Exception $e) {
     echo json_encode($e->getMessage());
-} catch (mysqli_sql_exception $e){
-    $sql->rollback();
-    echo json_encode($e->getMessage());
 }
-
 
 
