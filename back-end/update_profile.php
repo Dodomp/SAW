@@ -21,7 +21,9 @@ try {
             exit();
         }
 
-
+        $firstname = trim($data['firstname']);
+        $lastname = trim($data['lastname']);
+        $descr = trim($data['description']);
         $age = trim($data['age']);
         $nationality = trim($data['nationality']);
         $email = trim($data['email']);
@@ -42,13 +44,9 @@ try {
 
         echo json_encode(['success' => true, 'message' => 'Dati aggiornati con successo']);
 
-    } else {
-        // Se la richiesta non è di tipo POST, restituisci un errore
-
-        echo json_encode(['success' => false, 'message' => 'Invalid request method']);
     }
 
 
 } catch (Exception $e) {
-
+    echo json_encode(['success' => false, 'message' => 'errore']);
 }

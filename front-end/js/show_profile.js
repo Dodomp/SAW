@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log(data);
             take_data(data); //funzione che prende i dati e li mette nella pagina (è implementata sotto)
         })
-        .catch(error => console.log(error));
+        .catch(error => console.log(error)
+    );
 
 
     //la funzione sotto controlla se c'è stato il click sul bottone update
@@ -49,25 +50,11 @@ document.addEventListener("DOMContentLoaded", function() {
             body: updatedData
         })
             .then(response => {
-                if (response.ok) {
-                    // Controlla se la risposta contiene dati JSON
-                    const contentType = response.headers.get('content-type');
-                    if (contentType && contentType.includes('application/json')) {
-                        return response.json();
-                    } else {
-                        // Se la risposta è vuota o non è JSON, gestisci il caso qui
-
-
-
-
-                        return Promise.resolve({ message: 'Success' }); // Puoi restituire un oggetto vuoto o un messaggio di conferma
-
-
-                    }
-                } else {
+                if (!response.ok) {
                     alert("ERRORE, potresti aver usato una mail non valida");
-                    //location.reload();
+                    throw new Error(`HTTP error! Status: ${response.status}`);
                 }
+                return response.json();
             })
             .then(updatedData => {
                 console.log(updatedData);
@@ -76,10 +63,6 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => {
                 console.error('Error during fetch:', error);
                 alert("ERRORE, potresti aver usato una mail non valida");
-
-
-                // Continua con il gestore dell'errore
-                console.log(error);
             });
 
     });
@@ -185,7 +168,7 @@ function closeUpdatePassword() {
 function confirmUpdate() {
 
     //se almeno uno dei campi è vuoto non faccio niente
-    if (document.getElementById("current-password").value == "" || document.getElementById("new-password").value == "" || document.getElementById("confirm-password").value == "") {
+    if (document.getElementById("current-password").value === "" || document.getElementById("new-password").value === "" || document.getElementById("confirm-password").value === "") {
         mostraPopup('error', 'Inserisci tutti i campi')
         return;
     }
@@ -207,22 +190,10 @@ function confirmUpdate() {
             body: JSON.stringify(updatedData)
         })
         .then(response => {
-            if (response.ok) {
-                // Controlla se la risposta contiene dati JSON
-
-                const contentType = response.headers.get('content-type');
-                if (contentType && contentType.includes('application/json')) {
-                    return response.json();
-                }
-                else {
-                    // Se la risposta è vuota o non è JSON, gestisci il caso qui
-                    return Promise.resolve({ message: 'Success' }); // Puoi restituire un oggetto vuoto o un messaggio di conferma
-
-                }
-            } else {
-                // Se la risposta non è OK, gestisci il caso qui
-                throw new Error(`HTTP error! Status: ${response.status}`);
+            if (!response.ok) {
+                throw new Error(`Errore HTTP! Stato: ${response.status}`);
             }
+            return response.json();
         })
         .then(data => {
             //console.log(data);
