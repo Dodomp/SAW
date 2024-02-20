@@ -9,8 +9,9 @@
                     <li class='link'><a href='index.php'>HOME</a></li>
                     <li class='link'><a href='shop.php'>SHOP</a></li>
                     <li class='link'><a href='carrello.php'>CARRELLO</a></li>
-                    <li class='link'><a href='#'>CHI SIAMO</a></li>                    
+                    <li class='link'><a href='#'>CHI SIAMO</a></li>                   
                     <li class='link'><a href='newsletter.php'>NEWSLETTER</a></li>
+                    <li class='link'><a href='UserManagement.php'>ADMIN AREA</a></li>  
                     <li class='link'><a href='../back-end/logout.php' style='color: darkred;'>LOG OUT</a></li>
 
                 </ul>
@@ -31,7 +32,7 @@
                     <li class='link'><a href='shop.php'>SHOP</a></li>
                     <li class='link'><a href='carrello.php'>CARRELLO</a></li>
                     <li class='link'><a href='#'>CHI SIAMO</a></li>                    
-                    <li class='link'><a href='../back-end/logout.php'>LOG OUT</a></li>
+                    <li class='link'><a href='../back-end/logout.php' style='color: darkred;'>LOG OUT</a></li>
 
                 </ul>
                 <div class='nav__icons'>
