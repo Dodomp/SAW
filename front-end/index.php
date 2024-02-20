@@ -31,7 +31,7 @@
                 <button class="btn">SHOP NOW</button>
             </div>
             <div class="header__image">
-                <img src="assets/header.png" alt="header" />
+                <img src="assets/a.png" alt="header" />
             </div>
         </div>
     </header>
@@ -42,7 +42,7 @@
             <h2 class="section__title">New Collection</h2>
             <p>#35 ITEMS</p>
             <h4>Available on Store</h4>
-            <button class="btn">SHOP NOW</button>
+            <a class="btn" href="shop.php">SHOP NOW</a>
         </div>
     </section>
 
@@ -50,12 +50,12 @@
         <h2 class="section__title">On Sale</h2>
         <div class="sale__grid">
             <div class="sale__card">
-                <img src="assets/sale-1.jpg" alt="sale" />
+                <img src="assets/b.jpg" alt="sale" />
                 <div class="sale__content">
-                    <p class="sale__subtitle">MAN OUTERWEAR</p>
+                    <p class="sale__subtitle">MAN</p>
                     <h4 class="sale__title">sale <span>40%</span> off</h4>
                     <p class="sale__subtitle">- DON'T MISS -</p>
-                    <button class="btn sale__btn">SHOP NOW</button>
+                    <a class="btn sale__btn" href="shop.php">SHOP NOW</a>
                 </div>
             </div>
             <div class="sale__card">
