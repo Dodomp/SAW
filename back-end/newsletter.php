@@ -5,7 +5,7 @@ session_start();
 include 'function/function.php';
 include 'function/newsletter_function.php';
 
-if (!isAdmin()) header("location: ../front-end/index.php?message=error");
+if (!isAdmin()) header("location: ../front-end/index.php?");
 
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -36,16 +36,16 @@ try {
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host = 'smtp.gmail.com';                    // Set the SMTP server to send through
         $mail->SMTPAuth = true;                                   // Enable SMTP authentication
-        $mail->Username = 's.mussopiantelli@gmail.com';                     // SMTP username
-        $mail->Password = 'cpendhumfpgizixs';                               // SMTP password
+        $mail->Username = 'progettosaw24@gmail.com';                     // SMTP username
+        $mail->Password = 'hlyn hgif hsku qgyk';                               // SMTP password
         $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
         $mail->Port = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
         // Recipients
-        $mail->addAddress('s.mussopiantelli@gmail.com');
+        $mail->addAddress('progettosaw24@gmail.com');
         foreach ($destinatari as $valore) {
             $mail->addBCC($valore);
         }
-        $mail->setFrom('s.mussopiantelli@gmail.com', 'Stefano Musso Piantelli');
+        $mail->setFrom('progettosaw24@gmail.com', 'progettosaw24@gmail.com');
 
         $mail->isHTML(true);                                  // Set email format to HTML
         $mail->Subject = $oggetto;
