@@ -31,7 +31,7 @@
                 <button class="btn">SHOP NOW</button>
             </div>
             <div class="header__image">
-                <img src="assets/header.png" alt="header" />
+                <img src="assets/Orologi/Crono/crono8.jpeg" alt="header" />
             </div>
         </div>
     </header>
@@ -48,31 +48,31 @@
 
     <section class="section__container sale__container">
         <h2 class="section__title">On Sale</h2>
-        <div class="sale__grid">
+        <div class="sale__grid" style="width: auto">
             <div class="sale__card">
-                <img src="assets/sale-1.jpg" alt="sale" />
+                <img src="assets/Orologi/c.png" alt="sale" style="height: 100%; width: 100%; " />
                 <div class="sale__content">
-                    <p class="sale__subtitle">MAN OUTERWEAR</p>
+                    <p class="sale__subtitle">LAST STATUS WATCH</p>
                     <h4 class="sale__title">sale <span>40%</span> off</h4>
-                    <p class="sale__subtitle">- DON'T MISS -</p>
+
                     <button class="btn sale__btn">SHOP NOW</button>
                 </div>
             </div>
             <div class="sale__card">
-                <img src="assets/sale-2.jpg" alt="sale" />
+                <img src="assets/Orologi/d.png" alt="sale" style="height: 100%; width: 100%;"/>
                 <div class="sale__content">
-                    <p class="sale__subtitle">WOMAN T-SHIRT</p>
+                    <p class="sale__subtitle">CASIO GOLD</p>
                     <h4 class="sale__title">sale <span>25%</span> off</h4>
-                    <p class="sale__subtitle">- DON'T MISS -</p>
+
                     <button class="btn sale__btn">SHOP NOW</button>
                 </div>
             </div>
             <div class="sale__card">
-                <img src="assets/sale-3.jpg" alt="sale" />
+                <img src="assets/Orologi/e.png" alt="sale" style="height: 100%; width: 100%;" />
                 <div class="sale__content">
-                    <p class="sale__subtitle">JACKETS</p>
+                    <p class="sale__subtitle">POCKET WATCH</p>
                     <h4 class="sale__title">sale <span>20%</span> off</h4>
-                    <p class="sale__subtitle">- DON'T MISS -</p>
+
                     <button class="btn sale__btn">SHOP NOW</button>
                 </div>
             </div>
