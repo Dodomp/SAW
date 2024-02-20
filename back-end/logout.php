@@ -18,8 +18,6 @@
     session_unset();
     session_destroy();
 
-    //if (isset($_COOKIE['carrello'])) {
-    //}
 
     //CANCELLAZIONE DEL COOKIE DAL BROWSER SE PRESENTE
     if (isset($_COOKIE['id_cookie'])) {

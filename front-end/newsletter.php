@@ -12,31 +12,7 @@ if (!isAdmin()) header("Location: index.php");
     <title>Newsletter</title>
     <link rel="stylesheet" href="Style/Newsletter.css">
     <link rel="stylesheet" href="Style/navbar.css" />
-    <script src="js/newsletter.js"></script>
 
-    <style>
-        body {
-            background-color: white; /* Colore di sfondo scuro */
-            color: Black; /* Colore del testo bianco */
-        }
-
-        .container {
-          margin-top: 40px;
-            min-height: 50vh; /* Altezza minima della viewport */
-            display: flex;
-            flex-direction: column;
-            padding: 50px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        footer {
-            text-align: center;
-        }
-    </style>
 
 </head>
 

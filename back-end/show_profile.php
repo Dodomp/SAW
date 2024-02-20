@@ -20,5 +20,5 @@ try {
     echo json_encode($row);
 
 } catch (Exception $e) {
-
+    echo json_encode($e->getMessage());
 }

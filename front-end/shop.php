@@ -13,8 +13,6 @@ if(!isLogged()) {
             window.location.href = "login.php";
         </script>
         ';
-
-    //header("location: index.php");
 }
 
 ?>
@@ -73,17 +71,6 @@ if(!isLogged()) {
         </div>
     </div>
 
-
-
-    <!-- Aggiunta dell'area di amministrazione
-    <div class="admin-panel">
-        <a href="AdminArea.php" style="margin-right: 10px; margin-top: 35px;">Return</a>
-    </div>
-      -->
-    <!-- Contenuto dell'area di amministrazione
-    <div class="admin-content">
-       Il tuo contenuto amministrativo qui
-    </div>-->
 
 </div>
 

@@ -14,27 +14,10 @@ if(!isLogged()) header("index.php");
     <title>Carrello</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="Style/navbar.css" />
+    <link rel="stylesheet" href="Style/carrello.css" />
     <script src="js/carrello.js"></script>
 
-    <style>
-        .table-container {
-            margin-top: 20px; /* Aggiunge uno spazio sopra la tabella */
-        }
 
-        #userTable {
-            border-radius: 8px; /* Aggiunge angoli arrotondati alla tabella */
-        }
-
-        #userTable th, #userTable td {
-            text-align: center; /* Centra il testo nelle celle */
-        }
-
-        #userTable tbody tr:hover {
-            background-color: #f5f5f5; /* Aggiunge uno sfondo più chiaro al passaggio del mouse */
-        }
-
-
-    </style>
 
 </head>
 <body>
@@ -70,15 +53,7 @@ if(!isLogged()) header("index.php");
 
 
 
-    <!-- Aggiunta dell'area di amministrazione
-    <div class="admin-panel">
-        <a href="AdminArea.php" style="margin-right: 10px; margin-top: 35px;">Return</a>
-    </div>
-      -->
-    <!-- Contenuto dell'area di amministrazione
-    <div class="admin-content">
-       Il tuo contenuto amministrativo qui
-    </div>-->
+
 
 </div>
 

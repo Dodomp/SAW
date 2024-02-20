@@ -15,7 +15,7 @@ session_start();
 
 <body>
 
-<!-- manca una navbar -->
+
 
 <div class="container mt-5">
     <form id="registration" action="../back-end/registration.php" method="post">

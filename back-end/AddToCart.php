@@ -1,4 +1,5 @@
 <?php
+global $sql;
 session_start();
 
 include "function/function.php";
@@ -6,7 +7,9 @@ include "function/cart_function.php";
 
 if (!isLogged()) header("location: ../front-end/");
 
+header('Content-Type: application/json');
 
+$sql->begin_trasaction();
 
 try {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -15,6 +18,7 @@ try {
         $data = json_decode(file_get_contents('php://input'), true);
 
         $con = connection();
+
 
         if ($data['op'] == '1' && verifyAmount($data['id'],$con)){
             if (verifyProduct($data['id'],$_SESSION["login"],$con)>0){
@@ -37,15 +41,20 @@ try {
 
         }
 
+        $sql->commit();
         // Invia la risposta come JSON
         $message=true;
-        header('Content-Type: application/json');
+
         echo json_encode($message);
 
 
     }
 } catch (Exception $e) {
-    echo 'Caught exception: ',  $e->getMessage(), "\n";
+    echo json_encode($e->getMessage());
+} catch (mysqli_sql_exception $e){
+    $sql->rollback();
+    echo json_encode($e->getMessage());
 }
+
 
 

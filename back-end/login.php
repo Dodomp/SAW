@@ -31,12 +31,12 @@ try {
 
         if (!$res) {
             $con -> close();
-            throw new Exception("User not found");
+            throw new Exception("Something went wrong");
         }
 
         if (!password_verify($password, $res["password"])) {
             $con -> close();
-            throw new Exception("Incorrect password");
+            throw new Exception("Something went wrong");
         }
 
         $_SESSION["login"] = $res["id"];
