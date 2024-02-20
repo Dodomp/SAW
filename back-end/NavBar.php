@@ -4,14 +4,14 @@
         if (isset($_SESSION["admin"])){
             echo"
              <nav class='section__container nav__container'>
-                <a href='#' class='av__logo'>Mona </a>
+                <a href='#' class='av__logo'> </a>
                 <ul class='nav__links'>
                     <li class='link'><a href='index.php'>HOME</a></li>
                     <li class='link'><a href='shop.php'>SHOP</a></li>
-                    <li class='link'><a href='#'>CHI SIAMO</a></li>
                     <li class='link'><a href='carrello.php'>CARRELLO</a></li>
+                    <li class='link'><a href='#'>CHI SIAMO</a></li>                    
                     <li class='link'><a href='newsletter.php'>NEWSLETTER</a></li>
-                    <li class='link'><a href='../back-end/logout.php'>LOG OUT</a></li>
+                    <li class='link'><a href='../back-end/logout.php' style='color: darkred;'>LOG OUT</a></li>
 
                 </ul>
                 <div class='nav__icons'>
@@ -25,12 +25,12 @@
         else{
             echo"
              <nav class='section__container nav__container'>
-                <a href='#' class='av__logo'>Watch It </a>
+                <a href='#' class='av__logo'></a>
                 <ul class='nav__links'>
                     <li class='link'><a href='index.php'>HOME</a></li>
                     <li class='link'><a href='shop.php'>SHOP</a></li>
-                    <li class='link'><a href='#'>CHI SIAMO</a></li>
                     <li class='link'><a href='carrello.php'>CARRELLO</a></li>
+                    <li class='link'><a href='#'>CHI SIAMO</a></li>                    
                     <li class='link'><a href='../back-end/logout.php'>LOG OUT</a></li>
 
                 </ul>
@@ -48,7 +48,7 @@
     else {
         echo"
              <nav class='section__container nav__container'>
-                <a href='#' class='av__logo'>Watch It</a>
+                <a href='#' class='av__logo'></a>
                 <ul class='nav__links'>
                     <li class='link'><a href='index.php'>HOME</a></li>
                     <li class='link'><a href='shop.php'>SHOP</a></li>

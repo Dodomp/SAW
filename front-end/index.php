@@ -1,7 +1,6 @@
 <?php
     session_start();
-    var_dump($_SESSION);
-    ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +19,6 @@
 <body>
         <?php
             include "../back-end/NavBar.php";
-            if (isset($_GET["message"]))  echo "<script>  mostraPopupSuccesso() </script>";
         ?>
 
 

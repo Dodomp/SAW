@@ -4,6 +4,8 @@
     include 'function/function.php';
     include  'function/cart_function.php';
 
+    if (!isLogged()) header("Location: ../front-end/index.php");
+
     $con=connection();
 
     deleteCart($_SESSION["login"],$con);

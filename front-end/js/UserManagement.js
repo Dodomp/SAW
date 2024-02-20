@@ -33,22 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 checkbox.checked = user.admin;
                 checkbox.setAttribute('data-email', user.email);
                 checkbox.onchange = function () {
-                    if (this.checked) {
-                        makeAdmin(this.getAttribute('data-email'));
-                    } else {
-                        removeAdmin(this.getAttribute('data-email'));
-                    }
+                    toggleAdmin(this.getAttribute('data-email'));
                 };
 
-
-
-                checkbox.addEventListener('change', function () {
-                    if (this.checked) {
-                        makeAdmin(this.getAttribute('data-email'));
-                    } else {
-                        removeAdmin(this.getAttribute('data-email'));
-                    }
-                });
 
                 checkboxTd.appendChild(checkbox);
                 row.appendChild(checkboxTd);
@@ -65,14 +52,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-function removeAdmin(email) {
+function toggleAdmin(email) {
 
 
     let requestData = {
         email: email,
     };
 
-    fetch("RemoveAdmin.php", {
+    fetch("../back-end/ToggleAdmin.php", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -80,97 +67,23 @@ function removeAdmin(email) {
         body: JSON.stringify(requestData)
     })
         .then(response => {
-            if (response.ok) {
-                // Controlla se la risposta contiene dati JSON
-                const contentType = response.headers.get('content-type');
-                if (contentType && contentType.includes('application/json')) {
-                    return response.json();
-                } else {
-                    // Se la risposta è vuota o non è JSON, gestisci il caso qui
-                    return Promise.resolve({ message: 'Success' }); // Puoi restituire un oggetto vuoto o un messaggio di conferma
-
-                }
-            } else {
-                // Se la risposta non è OK, gestisci il caso qui
-                throw new Error(`HTTP error! Status: ${response.status}`);
+            if (!response.ok) {
+                throw new Error(`Errore HTTP! Stato: ${response.status}`);
             }
-
+            return response.json();
         })
         .then(response => {
-            console.log('Success:', response);
-            mostraPopupSuccesso('remove');
+            console.log(response.message);
+            mostraPopupSuccesso();
         })
         .catch(error => {
-            console.error('Error during fetch:', error);
-
-            // Aggiungi questo log per visualizzare la risposta completa
-            response.text().then(text => console.log('Response text:', text));
-
-            // Continua con il gestore dell'errore
-            console.log(error);
+            console.error('Errore nella richiesta Fetch POST:', error);
         });
 }
 
-
-function makeAdmin(email) {
-
-
-    let requestData = {
-        email: email,
-    };
-
-    fetch("MakeAdmin.php", {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(requestData)
-    })
-        .then(response => {
-            if (response.ok) {
-                // Controlla se la risposta contiene dati JSON
-                const contentType = response.headers.get('content-type');
-                if (contentType && contentType.includes('application/json')) {
-                    return response.json();
-                } else {
-                    // Se la risposta è vuota o non è JSON, gestisci il caso qui
-                    return Promise.resolve({ message: 'Success' }); // Puoi restituire un oggetto vuoto o un messaggio di conferma
-
-                }
-            } else {
-                // Se la risposta non è OK, gestisci il caso qui
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-
-        })
-        .then(response => {
-            console.log('Success:', response);
-            mostraPopupSuccesso('make');
-        })
-        .catch(error => {
-            console.error('Error during fetch:', error);
-
-            // Aggiungi questo log per visualizzare la risposta completa
-            response.text().then(text => console.log('Response text:', text));
-
-            // Continua con il gestore dell'errore
-            console.log(error);
-        });
-}
-
-
-
-
-
-function mostraPopupSuccesso(function_type) {
+function mostraPopupSuccesso() {
     let toast = new bootstrap.Toast(document.getElementById('toast'));
-    // Modifica dinamicamente il testo del corpo del toast in base alla funzione
-    let toastBody = document.getElementById('toast-body-content');
-    if (function_type === 'make') {
-        toastBody.innerHTML = 'Admin aggiunto con successo';
-    } else if (function_type === 'remove') {
-        toastBody.innerHTML = 'Admin rimosso con successo';
-    }
+
     toast.show();
     setTimeout(function() {
         toast.hide();

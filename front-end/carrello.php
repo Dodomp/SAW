@@ -11,8 +11,9 @@ if(!isLogged()) header("index.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Users Management</title>
+    <title>Carrello</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/navbar.css" />
     <script src="js/carrello.js"></script>
 
     <style>
@@ -32,20 +33,19 @@ if(!isLogged()) header("index.php");
             background-color: #f5f5f5; /* Aggiunge uno sfondo più chiaro al passaggio del mouse */
         }
 
+
     </style>
 
 </head>
 <body>
 
+<?php
+    include "../back-end/NavBar.php";
+?>
+
+
 
 <div class="container">
-
-    <header>
-        <h1>Users Management</h1>
-    </header>
-
-
-
 
 
     <div class="row">

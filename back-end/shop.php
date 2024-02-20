@@ -1,6 +1,9 @@
 <?php
+session_start();
 
 include "function/function.php";
+
+if (!isLogged()) header("Location: ../front-end/index.php");
 
 header('Access-Control-Allow-Origin: *');
 try{

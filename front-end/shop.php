@@ -26,9 +26,8 @@ if(!isLogged()) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/navbar.css" />
     <script src="js/shop.js"></script>
-
-    <link rel="stylesheet" href="Style/shop.css" />
 </head>
 <body>
 
@@ -37,10 +36,6 @@ if(!isLogged()) {
     ?>
 
 <div class="container">
-
-    <header class="header">
-        <h1>Shop</h1>
-    </header>
 
 
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
