@@ -1,9 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', callAndSaveWatch);
+document.getElementById('button-search').addEventListener('click', callAndSaveWatch)
 
+function callAndSaveWatch(){
+
+    let q = document.getElementById('input-search').value ?? "";
 
 
     // Esegui la chiamata FETCH per ottenere i dati dal backend
-    fetch("../back-end/shop.php", {
+    fetch("../back-end/shop.php?q=" + q, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -54,8 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => {
             console.log('Errore nella chiamata FETCH: ', error);
         });
-
-});
+}
 
 
 function AddToCart (id,price,op) {

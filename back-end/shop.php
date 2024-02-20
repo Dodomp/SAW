@@ -9,9 +9,16 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 try{
 
-    $con=connection();
+    if ($_SERVER['REQUEST_METHOD'] != "GET") {
+        throw new Exception("Method not allowed");
+    }
+
+    $q = "%" . ($_GET['q'] ?? "") . "%";
+
+    $con = connection();
     // Query per prendere tutti gli utenti
-    $stmt = $con->prepare("SELECT * FROM articoli");
+    $stmt = $con->prepare("SELECT * FROM articoli where DescBreve LIKE ? OR Descr LIKE ?");
+    $stmt->bind_param('ss', $q, $q);
     $stmt->execute();
 
     // Ottieni il risultato della query
