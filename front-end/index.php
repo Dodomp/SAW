@@ -27,22 +27,22 @@
         <div class="section__container header__container">
             <div class="header__content">
                 <p>EXTRA 55% OFF IN SPRING SALE</p>
-                <h1>Discover & Shop<br />The Trend Ss19</h1>
-                <button class="btn">SHOP NOW</button>
+                <h1>Discover & Shop<br /></h1>
+                <a class="btn" href="shop.php">SHOP NOW</a>
             </div>
             <div class="header__image">
-                <img src="assets/header.png" alt="header" />
+                <img src="assets/a.jpg" alt="header" />
             </div>
         </div>
     </header>
 
     <section class="section__container collection__container">
-        <img src="assets/collection.jpg" alt="collection" />
+        <img src="assets/b.jpg" alt="collection" />
         <div class="collection__content">
             <h2 class="section__title">New Collection</h2>
             <p>#35 ITEMS</p>
             <h4>Available on Store</h4>
-            <button class="btn">SHOP NOW</button>
+            <a class="btn" href="shop.php">SHOP NOW</a>
         </div>
     </section>
 
@@ -52,105 +52,33 @@
             <div class="sale__card">
                 <img src="assets/sale-1.jpg" alt="sale" />
                 <div class="sale__content">
-                    <p class="sale__subtitle">MAN OUTERWEAR</p>
+                    <p class="sale__subtitle">MAN </p>
                     <h4 class="sale__title">sale <span>40%</span> off</h4>
                     <p class="sale__subtitle">- DON'T MISS -</p>
-                    <button class="btn sale__btn">SHOP NOW</button>
+                    <a class="btn sale__btn" href="shop.php">SHOP NOW</a>
                 </div>
             </div>
             <div class="sale__card">
                 <img src="assets/sale-2.jpg" alt="sale" />
                 <div class="sale__content">
-                    <p class="sale__subtitle">WOMAN T-SHIRT</p>
+                    <p class="sale__subtitle">WOMAN </p>
                     <h4 class="sale__title">sale <span>25%</span> off</h4>
                     <p class="sale__subtitle">- DON'T MISS -</p>
-                    <button class="btn sale__btn">SHOP NOW</button>
+                    <a class="btn sale__btn" href="shop.php">SHOP NOW<a>
                 </div>
             </div>
             <div class="sale__card">
-                <img src="assets/sale-3.jpg" alt="sale" />
+                <img src="assets/sale-3.jpg" alt="sale"/>
                 <div class="sale__content">
-                    <p class="sale__subtitle">JACKETS</p>
+                    <p class="sale__subtitle">kids</p>
                     <h4 class="sale__title">sale <span>20%</span> off</h4>
                     <p class="sale__subtitle">- DON'T MISS -</p>
-                    <button class="btn sale__btn">SHOP NOW</button>
+                    <a class="btn sale__btn" href="shop.php">SHOP NOW</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section__container musthave__container">
-        <h2 class="section__title">Must Have</h2>
-        <div class="musthave__nav">
-            <a href="#">ALL</a>
-            <a href="#">MAN</a>
-            <a href="#">WOMEN</a>
-            <a href="#">BAG</a>
-            <a href="#">SHOES</a>
-        </div>
-        <div class="musthave__grid">
-            <div class="musthave__card">
-                <img src="assets/musthave-1.png" alt="must have" />
-                <h4>Basic long sleeve T-shirt</h4>
-                <p><del>$45.00</del> $75.00</p>
-            </div>
-            <div class="musthave__card">
-                <img src="assets/musthave-2.png" alt="must have" />
-                <h4>Ribbed T-shirt with buttons</h4>
-                <p><del>$45.00</del> $75.00</p>
-            </div>
-            <div class="musthave__card">
-                <img src="assets/musthave-3.png" alt="must have" />
-                <h4>Jacket withside strips</h4>
-                <p><del>$45.00</del> $75.00</p>
-            </div>
-            <div class="musthave__card">
-                <img src="assets/musthave-4.png" alt="must have" />
-                <h4>High-heel tubular sandals</h4>
-                <p><del>$45.00</del> $75.00</p>
-            </div>
-            <div class="musthave__card">
-                <img src="assets/musthave-5.png" alt="must have" />
-                <h4>Coral fabric belt bag</h4>
-                <p><del>$45.00</del> $75.00</p>
-            </div>
-            <div class="musthave__card">
-                <img src="assets/musthave-6.png" alt="must have" />
-                <h4>Piggy skater slogan T-shirt</h4>
-                <p><del>$45.00</del> $75.00</p>
-            </div>
-            <div class="musthave__card">
-                <img src="assets/musthave-7.png" alt="must have" />
-                <h4>White platform boots</h4>
-                <p><del>$45.00</del> $75.00</p>
-            </div>
-            <div class="musthave__card">
-                <img src="assets/musthave-8.png" alt="must have" />
-                <h4>Sweater vest with sleeves</h4>
-                <p><del>$45.00</del> $75.00</p>
-            </div>
-            <div class="musthave__card">
-                <img src="assets/musthave-9.png" alt="must have" />
-                <h4>Slim fit pants</h4>
-                <p><del>$45.00</del> $75.00</p>
-            </div>
-            <div class="musthave__card">
-                <img src="assets/musthave-10.png" alt="must have" />
-                <h4>Gray backpack</h4>
-                <p><del>$45.00</del> $75.00</p>
-            </div>
-            <div class="musthave__card">
-                <img src="assets/musthave-11.png" alt="must have" />
-                <h4>Neon sweatshirt</h4>
-                <p><del>$45.00</del> $75.00</p>
-            </div>
-            <div class="musthave__card">
-                <img src="assets/musthave-12.png" alt="must have" />
-                <h4>Hooded nautical jacket</h4>
-                <p><del>$45.00</del> $75.00</p>
-            </div>
-        </div>
-    </section>
 
     <section class="news">
         <div class="section__container news__container">
@@ -162,7 +90,7 @@
                         <p>
                             FASHION <i class="ri-checkbox-blank-circle-fill"></i>
                             <span>JAMES SIMSON</span>
-                            <i class="ri-checkbox-blank-circle-fill"></i> FEB 2, 2019
+                            <i class="ri-checkbox-blank-circle-fill"></i> FEB 22, 2024
                         </p>
                         <h4>Seasonal Trends</h4>
                         <hr />
@@ -214,22 +142,22 @@
 
     <section class="section__container brands__container">
         <div class="brand__image">
-            <img src="assets/brand-1.png" alt="brand" />
+
         </div>
         <div class="brand__image">
-            <img src="assets/brand-2.png" alt="brand" />
+            <img src="assets/brand-patek.png" alt="brand" />
         </div>
         <div class="brand__image">
-            <img src="assets/brand-3.png" alt="brand" />
+            <img src="assets/brand 3.png" alt="brand" />
         </div>
         <div class="brand__image">
-            <img src="assets/brand-4.png" alt="brand" />
+            <img src="assets/brand-rolex.png" alt="brand" />
         </div>
         <div class="brand__image">
-            <img src="assets/brand-5.png" alt="brand" />
+            <img src="assets/brand-omega.png" alt="brand" />
         </div>
         <div class="brand__image">
-            <img src="assets/brand-6.png" alt="brand" />
+
         </div>
     </section>
 
@@ -241,7 +169,7 @@
             <p>
                 <i class="ri-map-pin-2-fill"></i> 123, London Bridge Street, London
             </p>
-            <p><i class="ri-mail-fill"></i> support@monsa.com</p>
+            <p><i class="ri-mail-fill"></i> progettosaw24@gmail.com</p>
             <p><i class="ri-phone-fill"></i> (+012) 3456 789</p>
         </div>
         <div class="footer__col">
@@ -258,18 +186,6 @@
             <p>Track My Order</p>
             <p>Men</p>
             <p>Women</p>
-            <p>Shoes</p>
-        </div>
-        <div class="footer__col">
-            <h4 class="footer__heading">INSTAGRAM</h4>
-            <div class="instagram__grid">
-                <img src="assets/instagram-1.jpg" alt="instagram" />
-                <img src="assets/instagram-2.jpg" alt="instagram" />
-                <img src="assets/instagram-3.jpg" alt="instagram" />
-                <img src="assets/instagram-4.jpg" alt="instagram" />
-                <img src="assets/instagram-5.jpg" alt="instagram" />
-                <img src="assets/instagram-6.jpg" alt="instagram" />
-            </div>
         </div>
     </footer>
 
@@ -277,7 +193,7 @@
 
     <div class="section__container footer__bar">
         <div class="copyright">
-            Copyright © 2023 Web Design Mastery. All rights reserved.
+            Copyright © 2024 Martino Start UP. All rights reserved.
         </div>
 
     </div>
