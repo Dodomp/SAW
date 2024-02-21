@@ -14,13 +14,12 @@ body {
 
 #emailEditor {
     color: #030712;
-    width: 95%;
-    margin: 20px auto;
-    padding: 20px;
+    width: 60%;
+    margin: 5px auto;
+    padding: 15px;
     background-color: #fff;
-    border: solid #030712;
     border-radius: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
 }
 
 #formatBar {

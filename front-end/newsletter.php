@@ -25,9 +25,9 @@ include "../back-end/NavBar.php";
   <form   action="../back-end/newsletter.php" method="post" name="emailEditor" id="emailEditor">
       <h2>Newsletter</h2>
 
-      <input type="text" name="emailObject" id="emailObject" placeholder="Object" required> <br></br>
+      <input type="text" name="emailObject" id="emailObject" placeholder="Object" required> <br>
 
-      <textarea  id="emailBody" name="emailBody" ></textarea> <br></br>
+      <textarea  id="emailBody" name="emailBody" placeholder="Write here your email message"></textarea> <br>
       <button  id="sendButton" >Send</button>
   </form>
 

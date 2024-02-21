@@ -13,13 +13,13 @@ header('Content-Type: application/json');
 
 try {
 
+
     $con = connection();
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         //in data ci saranno idArticolo (id) e il prezzo (price) dell'articolo e remove o add (op)
         $data = json_decode(file_get_contents('php://input'), true);
-
 
 
         $con->begin_transaction();

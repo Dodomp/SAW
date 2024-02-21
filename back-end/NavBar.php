@@ -15,10 +15,7 @@
                     <li class='link'><a href='../back-end/logout.php' style='color: darkred;'>LOG OUT</a></li>
 
                 </ul>
-                <div class='nav__icons'>
-                    <span><i class='ri-shield-user-line'></i></span>
-                    <span><i class='ri-search-line'></i></span>
-                    <span><i class='ri-shopping-bag-2-line'></i></span>
+                <div class='nav__icons'>                  
                 </div>
             </nav>
         ";
@@ -36,9 +33,6 @@
 
                 </ul>
                 <div class='nav__icons'>
-                    <span><i class='ri-shield-user-line'></i></span>
-                    <span><i class='ri-search-line'></i></span>
-                    <span><i class='ri-shopping-bag-2-line'></i></span>
                 </div>
             </nav>
         ";
@@ -59,9 +53,6 @@
 
                 </ul>
                 <div class='nav__icons'>
-                    <span><i class='ri-shield-user-line'></i></span>
-                    <span><i class='ri-search-line'></i></span>
-                    <span><i class='ri-shopping-bag-2-line'></i></span>
                 </div>
             </nav>
         ";
