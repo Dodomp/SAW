@@ -25,13 +25,13 @@ function callAndSaveWatch(){
 
             data.forEach(function (articoli) {
 
-                let percorso = "assets/Orologi/" + articoli.NomeImmagine + ".jpeg"
+                let percorso = "assets/Orologi/" + articoli.NomeImmagine + ".jpg"
 
 
                 let row = document.createElement('tr');
                 row.innerHTML = `
-                            <td><img width=50px height=50px src=${percorso} alt="must have"></td>
-                            <td>${articoli.DescBreve}</td>
+                            <td><img id="img" width=50px height=50px src=${percorso} alt="must have"></td>
+                            <td>${articoli.Marca}</td>
                             <td>${articoli.Descr}</td>
                             <td>${articoli.Prezzo}</td>`;
 
@@ -69,7 +69,7 @@ function AddToCart (id,price,op) {
         op : op,
     };
 
-    fetch("../../back-end/AddToCart.php", {
+    fetch("../back-end/AddToCart.php", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

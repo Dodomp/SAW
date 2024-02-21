@@ -20,7 +20,7 @@ if (!isLogged()) header("Location: index.php");
 <body>
 
 <?php
-include '../back-end/navbar.php';
+include '../back-end/NavBar.php';
 ?>
 
 <!-- div per il popup di conferma -->

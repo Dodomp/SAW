@@ -16,18 +16,20 @@ document.addEventListener('DOMContentLoaded', function () {
             return response.json();
         })
         .then(data => {
+            let qta=0;
             let tbody = document.querySelector('#userTable tbody');
             tbody.innerHTML = ''; // Svuota il contenuto della tabella
 
             data.forEach(function (carrello) {
 
-                    let percorso = "assets/Orologi/" + carrello.NomeImmagine + ".jpeg"
+                    let percorso = "assets/Orologi/" + carrello.NomeImmagine + ".jpg"
 
 
                     let row = document.createElement('tr');
                     row.innerHTML = `
                                 <td><img width=50px height=50px src=${percorso} alt="must have"></td>
-                                <td>${carrello.DescBreve}</td>
+                                <td>${carrello.Marca}</td>
+                                <td>${carrello.Descr}</td>
                                 <td>${carrello.quantità}</td>
                                 <td>${carrello.prezzo}</td>`;
 
@@ -72,7 +74,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     buttonTdRM.appendChild(buttonRM);
                     row.appendChild(buttonTdRM);
                     tbody.appendChild(row);
+
+                    qta=qta+carrello.prezzo;
             });
+            document.getElementById("totale").innerHTML=qta;
         })
         .catch(error => {
             console.log('Errore nella chiamata FETCH: ', error);

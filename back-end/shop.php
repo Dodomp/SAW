@@ -17,7 +17,7 @@ try{
 
     $con = connection();
     // Query per prendere tutti gli utenti
-    $stmt = $con->prepare("SELECT * FROM articoli where DescBreve LIKE ? OR Descr LIKE ?");
+    $stmt = $con->prepare("SELECT * FROM articoli where Marca LIKE ? OR Descr LIKE ?");
     $stmt->bind_param('ss', $q, $q);
     $stmt->execute();
 

@@ -3,7 +3,7 @@
 //
 function connection()
 {
-    $con = new mysqli("localhost","root","","sawdb");
+    $con = new mysqli("localhost","S5240038","Walter","S5240038");
 
     // connection verify
     if ($con->connect_error) die("Connection failed: " . $con->connect_error);

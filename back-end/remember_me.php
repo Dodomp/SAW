@@ -42,7 +42,7 @@ if (isset($_COOKIE['id_cookie'])) {
             unset($_COOKIE['id_cookie']);
 
             // Redirect a una pagina di login o dove necessario
-            header("location: ../DBconnection.php");
+            header("location: ../front-end/login.php");
             exit();
         }
 
@@ -64,7 +64,7 @@ if (isset($_COOKIE['id_cookie'])) {
         $_SESSION["expire"] = time() + 600;
 
         // Redirect alla pagina riservata
-        header("location: ../front-end/ReservedArea");
+        header("location: ../front-end/index.php");
         exit();
     } catch (Exception $e) {
         // Gestione delle eccezioni

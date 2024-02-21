@@ -38,7 +38,8 @@ if(!isLogged()) header("index.php");
                     <thead class="thead-dark">
                     <tr>
                         <th scope="col">Immagine</th>
-                        <th scope="col">Nome Orologio</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Descrizione</th>
                         <th scope="col">Quantità</th>
                         <th scope="col">Prezzo</th>
                     </tr>
@@ -50,6 +51,19 @@ if(!isLogged()) header("index.php");
             </div>
         </div>
     </div>
+
+    <div style="font-size: 20px; font-weight: bold"
+        <h1>Totale: </h1>
+        <span id="totale">0</span>
+        <span>$</span>
+    </div>
+
+    <div>
+        <button class="btn btn-primary" style="margin-top: 20px">BUY</button>
+
+    </div>
+
+
 
 
 
