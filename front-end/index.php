@@ -13,7 +13,7 @@
             rel="stylesheet"
     />
     <link rel="stylesheet" href="Style/homepage.css" />
-    <title>Web Design Mastery | Watch It</title>
+    <title>Progetto Saw</title>
 </head>
 <body>
         <?php
@@ -173,12 +173,12 @@
         <div class="footer__col">
             <h4 class="footer__heading">INSTAGRAM</h4>
             <div class="instagram__grid">
-                <img src="assets/Orologi/Classico/class1.jpeg" alt="instagram" />
-                <img src="assets/Orologi/smart/smart3.jpeg" alt="instagram" />
-                <img src="assets/Orologi/Classico/class3.jpeg" alt="instagram" />
-                <img src="assets/Orologi/Crono/crono1.jpeg" alt="instagram" />
-                <img src="assets/Orologi/Classico/class8.jpeg" alt="instagram" />
-                <img src="assets/Orologi/taschino/tasc1.jpeg" alt="instagram" />
+                <img src="assets/Orologi/AppleWatch7.jpg" alt="instagram" />
+                <img src="assets/Orologi/GalaxyWatch5Pro.jpg" alt="instagram" />
+                <img src="assets/Orologi/7118_1200A_Nautilus.jpg" alt="instagram" />
+                <img src="assets/Orologi/GM-110GC-1A.jpg" alt="instagram" />
+                <img src="assets/Orologi/SpeedmasterDarkSideOfTheMoon.jpg" alt="instagram" />
+                <img src="assets/Orologi/SpeedmasterMoonwatchProfessional.jpg" alt="instagram" />
             </div>
         </div>
     </footer>
@@ -187,7 +187,7 @@
 
     <div class="section__container footer__bar">
         <div class="copyright">
-            Copyright © 2023 Web Design Mastery. All rights reserved.
+            Copyright © 2024 Martino Start Up. All rights reserved.
         </div>
 
     </div>
