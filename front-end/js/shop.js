@@ -83,8 +83,11 @@ function AddToCart (id,price,op) {
             return response.json();
         })
         .then(data => {
-            mostraPopupSuccesso();
-            console.log(data);
+            if(data.message==='true') {
+                mostraPopupSuccesso();
+                console.log(data);
+            }
+            else alert(data.message);
         })
         .catch(error => {
 

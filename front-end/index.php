@@ -13,7 +13,7 @@
             rel="stylesheet"
     />
     <link rel="stylesheet" href="Style/homepage.css" />
-    <title>Progetto Saw</title>
+    <title>Time Haven</title>
 </head>
 <body>
         <?php
@@ -25,7 +25,7 @@
     <header>
         <div class="section__container header__container">
             <div class="header__content">
-                <h1>Discover & Shop<br />The Trend Ss19</h1>
+                <h1>Time Haven<br />The Trend Ss19</h1>
                 <a href="shop.php"><button class="btn sale__btn">SHOP NOW</button></a>
             </div>
             <div class="header__image">

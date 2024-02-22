@@ -108,8 +108,14 @@ function AddToCart (id,price,op) {
             return response.json();
         })
         .then(data => {
-            location.reload();
-            console.log(data);
+            if(data.message === 'true'){
+                location.reload();
+            }
+            else{
+                console.log(data.message);
+                alert(data.message);
+            }
+
         })
         .catch(error => {
 

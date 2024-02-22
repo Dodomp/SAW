@@ -24,14 +24,19 @@ try {
 
         $con->begin_transaction();
 
-        if ($data['op'] == '1' && verifyAmount($data['id'],$con)){
-            if (verifyProduct($data['id'],$_SESSION["login"],$con)>0){
-                increaseProduct($data['id'],$data['price'],$_SESSION["login"],$con);
-            }
-            else{
+        $message="true";
 
-                addProduct($data['id'],$data['price'],$_SESSION["login"],$con);
+        if ($data['op'] == '1'){
+            if(verifyAmount($data['id'],$con)){
+                if (verifyProduct($data['id'],$_SESSION["login"],$con)>0){
+                    increaseProduct($data['id'],$data['price'],$_SESSION["login"],$con);
+                }
+                else {
+
+                    addProduct($data['id'], $data['price'], $_SESSION["login"], $con);
+                }
             }
+            else $message="Prodotto esaurito";
         }
         else {
             $qta=verifyProduct($data['id'],$_SESSION["login"],$con);
@@ -49,9 +54,9 @@ try {
 
         $con->close();
         // Invia la risposta come JSON
-        $message=true;
 
-        echo json_encode($message);
+
+        echo json_encode(array("message" => $message));
 
 
     }
