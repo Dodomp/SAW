@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 return response.json();
             })
             .then(updatedData => {
-                console.log(updatedData);
                 location.reload();
             })
             .catch(error => {

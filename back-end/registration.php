@@ -47,9 +47,7 @@ try {
             $stmt->bind_param("s", $email);
             $stmt->execute();
 
-            if ($stmt->errno) {
-                throw new Exception("ERROR, TRY AGAIN");
-            }
+
 
             if ($stmt->num_rows() > 0) {
                 throw new Exception("EMAIL ALREADY IN USE");
@@ -61,9 +59,6 @@ try {
             $stmt->bind_param('ssssi', $firstname, $lastname, $email, $hashedPassword, $Newsletter);
             $stmt -> execute();
 
-            if ($stmt->errno) {
-                throw new Exception("ERROR, TRY AGAIN");
-            }
 
             //chiudo il database
             $con->close();
