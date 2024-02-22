@@ -37,11 +37,11 @@ session_start();
         </div>
         <div class="mb-3">
             <label for="pass" class="form-label">Insert password:</label>
-            <input type="password" class="form-control" id="pass" name="pass" required>
+            <input type="password" class="form-control" id="pass" name="pass" placeholder="lunghezza minima 10 caratteri" required>
         </div>
         <div class="mb-3">
             <label for="confirm" class="form-label">Confirm password:</label>
-            <input type="password" class="form-control" id="confirm" name="confirm" required>
+            <input type="password" class="form-control" id="confirm" name="confirm" placeholder="lunghezza minima 10 caratteri" required>
         </div>
         <div class="form-check">
             <input type="checkbox" class="form-check-input" id="Newsletter" name="Newsletter">
@@ -55,6 +55,9 @@ session_start();
 </div>
 
 
+<script>
+    validatePassword();
+</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
