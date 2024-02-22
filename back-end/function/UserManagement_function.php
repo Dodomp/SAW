@@ -21,3 +21,11 @@ function toggleAdmin ($email, $con) {
 
     if (!$stmt->affected_rows) throw new Exception("No user found");
 }
+
+function removeUser ($id, $con) {
+    $sql = "DELETE FROM users WHERE id=$id";
+    $con->query($sql);
+
+    $sql = "DELETE FROM carrello WHERE id_utente=$id";
+    $con->query($sql);
+}

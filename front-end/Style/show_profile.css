@@ -126,6 +126,9 @@ header {
     padding: 5px 10px;
     border-radius: 6px;
 }
+.close-button:active {
+    transform: scale(0.95);
+}
 
 #confirm-button {
     display: block;
@@ -137,6 +140,9 @@ header {
     border: solid 2px #fff;
     border-radius: 5px;
     cursor: pointer;
+}
+#confirm-button:active {
+    transform: scale(0.95);
 }
 
 .form-password {

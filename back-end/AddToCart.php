@@ -46,6 +46,8 @@ try {
         }
 
         $con->commit();
+
+        $con->close();
         // Invia la risposta come JSON
         $message=true;
 
