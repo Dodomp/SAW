@@ -4,10 +4,11 @@ document.getElementById('button-search').addEventListener('click', callAndSaveWa
 function callAndSaveWatch(){
 
     let q = document.getElementById('input-search').value ?? "";
+    let max = document.getElementById('max').value ?? "";
 
 
     // Esegui la chiamata FETCH per ottenere i dati dal backend
-    fetch("../back-end/shop.php?q=" + q, {
+    fetch("../back-end/shop.php?q=" + q + "&max=" + max,{
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -33,7 +34,13 @@ function callAndSaveWatch(){
                             <td><img id="img" width=50px height=50px src=${percorso} alt="must have"></td>
                             <td>${articoli.Marca}</td>
                             <td>${articoli.Descr}</td>
-                            <td>${articoli.Prezzo}</td>`;
+                            <td style="text-align: right">${articoli.Prezzo.toLocaleString('it-IT', {
+                                style: 'currency',
+                                currency: 'EUR'
+                            })}</td>`;
+
+
+
 
                 let buttonTd1 = document.createElement('td');
                 let button = document.createElement('button');

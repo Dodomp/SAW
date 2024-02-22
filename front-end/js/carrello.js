@@ -30,8 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <td><img width=50px height=50px src=${percorso} alt="must have"></td>
                                 <td>${carrello.Marca}</td>
                                 <td>${carrello.Descr}</td>
-                                <td>${carrello.quantità}</td>
-                                <td>${carrello.prezzo}</td>`;
+                                <td style="text-align: right">${carrello.quantità}</td>
+                                <td style="text-align: right">${carrello.prezzo.toLocaleString('it-IT', {
+                                    style: 'currency',
+                                    currency: 'EUR'
+                                })}</td>`;
 
                     let buttonTdAdd = document.createElement('td');
                     let buttonAdd = document.createElement('button');

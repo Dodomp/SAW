@@ -55,7 +55,7 @@ if(!isLogged()) header("index.php");
     <div style="font-size: 20px; font-weight: bold"
         <h1>Totale: </h1>
         <span id="totale">0</span>
-        <span>$</span>
+        <span>€</span>
     </div>
 
     <div>

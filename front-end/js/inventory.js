@@ -22,8 +22,8 @@ fetch("../back-end/inventory.php?", {
             row.innerHTML = `                          
                             <td>${articoli.Marca}</td>
                             <td>${articoli.Descr}</td>
-                            <td>${articoli.Prezzo}</td>
-                            <td>${articoli.Quantita}</td>`;
+                            <td style="text-align: right">${articoli.Prezzo}</td>
+                            <td style="text-align: right">${articoli.Quantita}</td>`;
 
             let buttonTd1 = document.createElement('td');
             let button = document.createElement('button');

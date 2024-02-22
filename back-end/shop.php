@@ -14,11 +14,14 @@ try{
     }
 
     $q = "%" . ($_GET['q'] ?? "") . "%";
+    $max = ($_GET['max'] ?? "");
+   if ($max == "") $max = 100000;
+
 
     $con = connection();
     // Query per prendere tutti gli utenti
-    $stmt = $con->prepare("SELECT * FROM articoli where Marca LIKE ? OR Descr LIKE ?");
-    $stmt->bind_param('ss', $q, $q);
+    $stmt = $con->prepare("SELECT * FROM articoli where ( Marca LIKE ? OR Descr LIKE ? ) and Prezzo <= ?");
+    $stmt->bind_param('ssi', $q, $q, $max);
     $stmt->execute();
 
     // Ottieni il risultato della query
