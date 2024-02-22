@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return response.json();
         })
         .then(data => {
-            let qta=0;
+            let CostoTotale=0;
             let tbody = document.querySelector('#userTable tbody');
             tbody.innerHTML = ''; // Svuota il contenuto della tabella
 
@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     row.appendChild(buttonTdRM);
                     tbody.appendChild(row);
 
-                    qta=qta+carrello.prezzo;
+                    CostoTotale=CostoTotale+carrello.prezzo;
             });
-            document.getElementById("totale").innerHTML=qta;
+            document.getElementById("totale").innerHTML=CostoTotale;
         })
         .catch(error => {
             console.log('Errore nella chiamata FETCH: ', error);
