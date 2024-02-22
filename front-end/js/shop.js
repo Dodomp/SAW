@@ -111,3 +111,20 @@ function mostraPopupSuccesso() {
         toast.hide();
     }, 1500);
 }
+
+
+
+document.getElementById("max").addEventListener("input", function(event) {
+    // Ottieni il valore corrente del campo
+    let inputValue = event.target.value;
+    //controllo che inpputValue sia un numero
+    if (isNaN(inputValue)) {
+        // Se non è un numero, elimina l'ultimo carattere inserito
+        event.target.value = inputValue.substring(0, inputValue.length - 1);
+    }
+    //controllo che lo spazio non sia inserito
+    else if (inputValue.includes(" ")) {
+        // Se non è un numero intero, elimina l'ultimo carattere inserito
+        event.target.value = inputValue.substring(0, inputValue.length - 1);
+    }
+});

@@ -22,20 +22,22 @@
 
 
 
-    <header>
+    <header style="margin-top: 85px">
         <div class="section__container header__container">
             <div class="header__content">
-                <h1>Time Haven<br />The Trend Ss19</h1>
+                <h1>Time Haven</h1>
+                <p style="font-size: larger">Per quanto tempo è per sempre?</p>
+                <p style="font-size: larger">A volte, solo un secondo</p>
                 <a href="shop.php"><button class="btn sale__btn">SHOP NOW</button></a>
             </div>
             <div class="header__image">
-                <img src="assets/a.jpg" alt="header" />
+                <img src="assets/a.jpg" alt="header" style="border: solid 5px black" />
             </div>
         </div>
     </header>
 
     <section class="section__container collection__container">
-        <img src="assets/b.jpg" alt="collection" style="width: 100%"/>
+        <img src="assets/b.jpg" alt="collection" style="width: 100%; border: solid 5px black "/>
         <div class="collection__content">
             <h2 class="section__title">New Collection</h2>
             <a href="shop.php"><button class="btn sale__btn">SHOP NOW</button></a>

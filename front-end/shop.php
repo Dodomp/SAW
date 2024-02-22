@@ -30,6 +30,7 @@ if(!isLogged()) {
             transform: scale(5);
             text-align: center;
         }
+
     </style>
 </head>
 <body>
@@ -55,7 +56,7 @@ if(!isLogged()) {
 
     <div class="input-group mb-3">
         <input type="text" class="form-control" id="input-search" placeholder="Search by name or description" aria-label="Recipient's username" aria-describedby="button-search">
-        <input type="text" style="text-align: right" class="form-control" id="max" placeholder="Search by name maximus price" aria-label="Recipient's username" aria-describedby="button-search">
+        <input type="text" style="text-align: right" class="form-control" id="max" placeholder="Search by max price" aria-label="Recipient's username" aria-describedby="button-search">
         <button class="btn btn-outline-secondary" type="button" id="button-search">Search</button>
     </div>
 

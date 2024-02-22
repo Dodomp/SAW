@@ -47,7 +47,7 @@
                 <ul class='nav__links'>
                     <li class='link'><a href='index.php'>HOME</a></li>
                     <li class='link'><a href='shop.php'>SHOP</a></li>
-                    <li class='link'><a href='#'>CHI SIAMO</a></li>
+                    <li class='link'><a href='introduzione.php'>CHI SIAMO</a></li>
                     <li class='link'><a href='login.php'>SIGN IN</a></li>
                     <li class='link'><a href='registration.php'>SIGN UP</a></li>
 
