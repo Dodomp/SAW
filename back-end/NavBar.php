@@ -4,7 +4,7 @@
         if (isset($_SESSION["admin"])){
             echo "
                 <nav class='section__container nav__container'>
-                    <a href='#' class='av__logo'> </a>
+                    <img src='../front-end/assets/z.png' class='av__logo' style='width: 5%; mix-blend-mode: multiply;'>
                     <ul class='nav__links'>
                         <li class='link'><a href='index.php'>HOME</a></li>
                         <li class='link'><a href='shop.php'>SHOP</a></li>
@@ -23,7 +23,7 @@
         else{
             echo"
              <nav class='section__container nav__container'>
-                <a href='#' class='av__logo'></a>
+                <img src='../front-end/assets/z.png' class='av__logo' style='width: 5%; mix-blend-mode: multiply;'>
                 <ul class='nav__links'>
                     <li class='link'><a href='index.php'>HOME</a></li>
                     <li class='link'><a href='shop.php'>SHOP</a></li>
@@ -43,7 +43,7 @@
     else {
         echo"
              <nav class='section__container nav__container'>
-                <a href='#' class='av__logo'></a>
+                <img src='../front-end/assets/z.png' class='av__logo' style='width: 5%; mix-blend-mode: multiply;'>
                 <ul class='nav__links'>
                     <li class='link'><a href='index.php'>HOME</a></li>
                     <li class='link'><a href='shop.php'>SHOP</a></li>

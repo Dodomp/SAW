@@ -3,10 +3,8 @@
 //
 function connection()
 {
-    //$con = new mysqli("localhost","S5240038","Walter","S5240038");
-    $con = new mysqli("localhost","root","","sawdb");
-    // connection verify
-    if ($con->connect_error) die("Connection failed: " . $con->connect_error);
+    $con = new mysqli("localhost","S5240038","Walter","S5240038");
+    //$con = new mysqli("localhost","root","","sawdb");
 
     return $con;
 

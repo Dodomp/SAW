@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Haven</title>
     <link rel="stylesheet" href="Style/navbar.css">
+    <link rel="shortcut icon" href="favicon.ico" />
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -31,8 +32,8 @@
 
         footer {
             background-color: #0069a6;
+            padding: 10px 0 10px 0;
             color: #fff;
-            padding: 10px;
             text-align: center;
             position: fixed;
             bottom: 0;
@@ -48,7 +49,9 @@
 
 <header>
     <h1>Time Haven</h1>
+    <img src="assets/z.png" alt="spongebob" width="10%" style="border-radius: 70px">
     <p>Realizzato da Stefano Walter e Martino</p>
+
 </header>
 
 <section style="text-align: center">
@@ -56,9 +59,12 @@
     <p>Esplorate la nostra selezione di orologi di alta qualità provenienti dai migliori brand.</p>
     <p>Siamo appassionati di orologi e garantiamo prodotti autentici e affidabili.</p>
     <p>Scoprite stili unici e prezzi competitivi nel nostro catalogo.</p>
+
 </section>
 
-<footer>
+
+
+<footer style="position: relative">
     <p>&copy; 2024 Rivendita Orologi - Stefano Walter & Martino</p>
 </footer>
 </body>

@@ -12,6 +12,7 @@ if (!isAdmin()) header("Location: index.php");
     <title>Newsletter</title>
     <link rel="stylesheet" href="Style/Newsletter.css">
     <link rel="stylesheet" href="Style/navbar.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
 
 
 </head>

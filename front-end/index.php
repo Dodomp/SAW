@@ -13,6 +13,7 @@
             rel="stylesheet"
     />
     <link rel="stylesheet" href="Style/homepage.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <title>Time Haven</title>
 </head>
 <body>
